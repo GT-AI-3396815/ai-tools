@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="光体•AI超市 - 全行业AI工具与智能体超级工具集 · 12大行业类目108细分领域">
+<link rel="canonical" href="https://gt-ai-3396815.github.io/ai-tools/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="光体•AI超市 - 全行业AI工具与智能体超级工具集">
+<meta property="og:description" content="12大行业类目108细分领域，6类标准化AI产品：专属智能体/Prompt指令库/营销文案/数字人口播/数据获客/TOKEN聚合平台，支持合伙人分销佣金30%">
+<meta property="og:image" content="https://gt-ai-3396815.github.io/ai-tools/og-image.png">
+<meta property="og:url" content="https://gt-ai-3396815.github.io/ai-tools/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" href="og-image.png">
+
 <title>光体•AI超市 - 全行业AI工具与智能体超级工具集 · 12大行业类目108细分领域</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%2316a34a'/><text x='50' y='72' font-size='56' text-anchor='middle' fill='white' font-family='sans-serif' font-weight='bold'>光</text></svg>">
 <style>
@@ -164,7 +173,79 @@ main{padding:32px 0 72px}
 .preview-btn:hover{border-color:#16a34a;color:#16a34a}
 .preview-btn.primary{background:#16a34a;color:#fff;border-color:#16a34a}
 .preview-fallback .url-box{padding:14px 20px;background:#f1f5f9;border:1px dashed var(--border-hover);border-radius:10px;font-family:'SF Mono',Monaco,monospace;font-size:13px;color:var(--primary);word-break:break-all;max-width:520px;user-select:all}
+
+/* ===== P0 咨询CTA与弹窗 ===== */
+.cta-btn{display:flex;align-items:center;gap:8px;background:var(--gradient);color:#fff;border:none;border-radius:24px;padding:10px 22px;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 4px 14px rgba(16,185,129,.35);transition:.25s;white-space:nowrap;flex:none}
+.cta-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(16,185,129,.45)}
+.contact-overlay{position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:900;display:none;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px)}
+.contact-overlay.active{display:flex}
+.contact-modal{background:#fff;border-radius:var(--radius-lg);max-width:520px;width:100%;max-height:88vh;overflow-y:auto;padding:32px;position:relative;box-shadow:var(--shadow-lg)}
+.contact-close{position:absolute;top:14px;right:14px;width:34px;height:34px;border:none;border-radius:50%;background:var(--bg);color:var(--text-secondary);font-size:18px;cursor:pointer;line-height:1}
+.contact-close:hover{background:var(--primary-bg);color:var(--primary-dark)}
+.contact-modal h3{font-size:22px;font-weight:800;margin:0 0 6px}
+.contact-modal .contact-sub{font-size:13px;color:var(--text-secondary);margin-bottom:20px}
+.contact-channels{display:flex;flex-direction:column;gap:10px;margin-bottom:20px}
+.contact-channel{display:flex;align-items:center;gap:10px;background:var(--primary-bg);border-radius:var(--radius-sm);padding:12px 14px;font-size:14px;color:var(--text)}
+.contact-channel b{color:var(--primary-dark)}
+.contact-form{display:flex;flex-direction:column;gap:12px}
+.contact-form label{font-size:13px;font-weight:600;color:var(--text)}
+.contact-form input,.contact-form textarea,.contact-form select{width:100%;box-sizing:border-box;border:1.5px solid var(--border);border-radius:var(--radius-sm);padding:10px 12px;font-size:14px;font-family:inherit;outline:none;transition:.2s;background:#fff;color:var(--text)}
+.contact-form input:focus,.contact-form textarea:focus,.contact-form select:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(16,185,129,.12)}
+.contact-submit{background:var(--gradient);color:#fff;border:none;border-radius:var(--radius-sm);padding:13px;font-size:15px;font-weight:700;cursor:pointer;transition:.25s}
+.contact-submit:hover{transform:translateY(-1px);box-shadow:0 6px 18px rgba(16,185,129,.4)}
+.contact-tip{font-size:12px;color:var(--text-tertiary);text-align:center}
+/* ===== P0/P1 全站信息板块 ===== */
+.info-section{padding:56px 0 8px}
+.info-section .sec-title{text-align:center;font-size:26px;font-weight:800;margin:0 0 8px}
+.info-section .sec-sub{text-align:center;font-size:14px;color:var(--text-secondary);margin:0 0 28px}
+.buy-cta-bar{margin:22px 0 6px;padding:18px 22px;border-radius:var(--radius);background:var(--primary-bg);border:1.5px dashed var(--primary);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.buy-cta-bar .bar-text b{display:block;font-size:15px;color:var(--text)}
+.buy-cta-bar .bar-text span{font-size:13px;color:var(--text-secondary)}
+/* ===== P2 套餐表 ===== */
+.plan-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.plan-card{background:#fff;border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:26px 22px;display:flex;flex-direction:column;gap:6px;position:relative;transition:.25s}
+.plan-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-hover);border-color:var(--primary)}
+.plan-card.hot{border-color:var(--primary);box-shadow:var(--shadow-hover)}
+.plan-tag{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gradient);color:#fff;font-size:12px;font-weight:700;padding:4px 14px;border-radius:12px;white-space:nowrap}
+.plan-name{font-size:17px;font-weight:800;margin-top:6px}
+.plan-price{font-size:30px;font-weight:800;color:var(--primary-dark)}
+.plan-price small{font-size:13px;font-weight:600;color:var(--text-tertiary)}
+.plan-desc{font-size:13px;color:var(--text-secondary);margin-bottom:8px}
+.plan-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;flex:1}
+.plan-list li{font-size:13.5px;color:var(--text);padding-left:22px;position:relative;line-height:1.5}
+.plan-list li::before{content:'✓';position:absolute;left:0;color:var(--primary);font-weight:800}
+.plan-btn{margin-top:14px;background:var(--gradient);color:#fff;border:none;border-radius:var(--radius-sm);padding:11px;font-size:14px;font-weight:700;cursor:pointer}
+.plan-note{text-align:center;font-size:12.5px;color:var(--text-tertiary);margin-top:14px}
+/* ===== P2 FAQ ===== */
+.faq-list{max-width:820px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.faq-item{background:#fff;border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.faq-q{width:100%;box-sizing:border-box;display:flex;justify-content:space-between;align-items:center;gap:12px;background:none;border:none;padding:16px 18px;font-size:15px;font-weight:600;color:var(--text);cursor:pointer;text-align:left;font-family:inherit}
+.faq-q .arr{transition:.25s;color:var(--primary);flex:none}
+.faq-item.open .arr{transform:rotate(180deg)}
+.faq-a{display:none;padding:0 18px 16px;font-size:13.5px;color:var(--text-secondary);line-height:1.8}
+.faq-item.open .faq-a{display:block}
+/* ===== P2 TOKEN决策矩阵 ===== */
+.matrix-scroll{overflow-x:auto;border-radius:var(--radius);border:1.5px solid var(--border);background:#fff}
+.matrix-table{width:100%;border-collapse:collapse;font-size:13px;min-width:760px}
+.matrix-table th{background:var(--primary-bg);color:var(--primary-dark);font-weight:700;padding:12px 10px;text-align:left;white-space:nowrap}
+.matrix-table td{padding:11px 10px;border-top:1px solid var(--border);color:var(--text);line-height:1.5;vertical-align:top}
+.matrix-table tr:hover td{background:#fafcfd}
+.matrix-title{font-size:18px;font-weight:800;margin:26px 0 12px}
+/* ===== P1 关于我们/免责 ===== */
+.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:start}
+.about-main{background:#fff;border:1.5px solid var(--border);border-radius:var(--radius-lg);padding:26px;font-size:14px;color:var(--text-secondary);line-height:2}
+.about-main b{color:var(--text)}
+.about-side{display:flex;flex-direction:column;gap:12px}
+.about-stat{background:var(--primary-bg);border-radius:var(--radius);padding:16px 18px;display:flex;align-items:baseline;gap:10px}
+.about-stat b{font-size:26px;font-weight:800;color:var(--primary-dark)}
+.about-stat span{font-size:13px;color:var(--text-secondary)}
+.disclaimer{padding:22px 0 8px;text-align:center;font-size:12px;color:var(--text-tertiary);line-height:1.9}
+.footer-info{display:flex;flex-direction:column;align-items:center;gap:6px;padding-bottom:8px}
+.footer-info .fi-row{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;font-size:13px;color:var(--text-secondary)}
+.footer-info .fi-row a{color:var(--primary-dark);cursor:pointer;text-decoration:none;font-weight:600}
+@media (max-width:860px){.plan-wrap{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.header-top{gap:10px}.cta-btn span.cta-txt{display:none}.cta-btn{padding:10px 14px}}
 </style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Organization", "name": "光体•AI超市", "url": "https://gt-ai-3396815.github.io/ai-tools/", "logo": "https://gt-ai-3396815.github.io/ai-tools/og-image.png", "description": "光体AI旗下的行业AI产品与智能体平台，12大行业类目108细分领域六大类标准化AI产品。"}, {"@type": "WebSite", "name": "光体•AI超市", "url": "https://gt-ai-3396815.github.io/ai-tools/"}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "我的业务数据安全吗？存在哪里？", "acceptedAnswer": {"@type": "Answer", "text": "订阅版数据云端租户隔离，旗舰版支持私有化部署，数据完全留在客户自己的服务器；不将客户业务数据用于任何第三方用途。"}}, {"@type": "Question", "name": "底层用的是什么大模型？可以更换吗？", "acceptedAnswer": {"@type": "Answer", "text": "平台架构模型无关，默认接入混元、DeepSeek、通义千问、GLM、Kimi等主流模型，也可通过TOKEN聚合平台接入任意服务商，可随时切换。"}}, {"@type": "Question", "name": "按月订阅、年付和买断有什么区别？", "acceptedAnswer": {"@type": "Answer", "text": "按月订阅灵活；年付按10个月计费；Prompt指令库等工具类产品支持一次性买断并含约定次数更新。"}}, {"@type": "Question", "name": "付款后多久能用上？", "acceptedAnswer": {"@type": "Answer", "text": "订阅类1-3个工作日开通；行业定制智能体2-4周交付；旗舰版可选私有化部署。"}}, {"@type": "Question", "name": "能开发票吗？支持对公转账吗？", "acceptedAnswer": {"@type": "Answer", "text": "支持公对公转账，可开具增值税专用发票与普通发票。"}}, {"@type": "Question", "name": "售后响应时效？", "acceptedAnswer": {"@type": "Answer", "text": "工单响应不超过24小时，增长版专属通道12小时，旗舰版1对1顾问工作日实时响应。"}}, {"@type": "Question", "name": "合伙人分销如何结算？", "acceptedAnswer": {"@type": "Answer", "text": "个人或机构均可申请，促成订单享30%佣金，按月结算，提供素材与培训支持。"}}, {"@type": "Question", "name": "案例数据真实吗？", "acceptedAnswer": {"@type": "Answer", "text": "案例均来自客户授权的脱敏运营统计或内测数据，效果因企业而异，不构成收益承诺。"}}]}]}</script>
 </head>
 <body>
 <header class="header">
@@ -180,7 +261,7 @@ main{padding:32px 0 72px}
       <div class="search-box">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
         <input type="text" id="searchInput" placeholder="搜索 AI 工具，输入关键词即时过滤...">
-      </div>
+      </div><button class="cta-btn" id="ctaBtn"><span class="cta-txt">立即咨询</span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg></button>
     </div>
   </div>
 </header>
@@ -196,9 +277,157 @@ main{padding:32px 0 72px}
     <div class="search-status" id="searchStatus"></div>
   </div>
 </main>
-<footer class="footer"><div class="container"><p>光体•AI超市 &copy; 2026 &mdash; 全行业AI工具与智能体超级工具集 · 12大行业类目108细分领域</p></div></footer>
+
+<section class="info-section" id="pricing">
+  <div class="container">
+    <h2 class="sec-title">套餐与价格</h2>
+    <p class="sec-sub">三档订阅套餐覆盖从个人创业者到集团企业的全部需求，单品均可单独购买</p>
+    <div class="plan-wrap">
+      <div class="plan-card">
+        <div class="plan-name">启航版</div>
+        <div class="plan-price">¥1999<small>/月</small></div>
+        <p class="plan-desc">适合个人创业者与小微企业快速起步</p>
+        <ul class="plan-list">
+          <li>营销文案脚本库（¥999买断同款能力）</li>
+          <li>数据分析获客工具（¥999/月同款）</li>
+          <li>运营SOP工作流基础版</li>
+          <li>工作日在线客服支持</li>
+          <li>功能季度更新</li>
+        </ul>
+        <button class="plan-btn js-contact">咨询开通</button>
+      </div>
+      <div class="plan-card hot">
+        <div class="plan-tag">最多企业选择</div>
+        <div class="plan-name">增长版</div>
+        <div class="plan-price">¥4999<small>/月</small></div>
+        <p class="plan-desc">适合成长期团队搭建完整AI获客体系</p>
+        <ul class="plan-list">
+          <li>包含启航版全部权益</li>
+          <li>专属AI智能体（标准模块，¥3333/月起同款）</li>
+          <li>数字人口播话术（¥3333/月同款）</li>
+          <li>每月1次专属运营复盘</li>
+          <li>7×12小时专属客服通道</li>
+        </ul>
+        <button class="plan-btn js-contact">咨询开通</button>
+      </div>
+      <div class="plan-card">
+        <div class="plan-name">旗舰版</div>
+        <div class="plan-price">¥9999<small>/月</small></div>
+        <p class="plan-desc">适合集团企业与连锁品牌的深度定制</p>
+        <ul class="plan-list">
+          <li>包含增长版全部权益</li>
+          <li>专属AI智能体全模块定制（顶配）</li>
+          <li>全套Prompt指令库（¥999买断同款）</li>
+          <li>1对1专属顾问 + 季度战略共创</li>
+          <li>支持私有化部署选项</li>
+        </ul>
+        <button class="plan-btn js-contact">咨询开通</button>
+      </div>
+    </div>
+    <p class="plan-note">年付享 10 个月价（ equivalent 2 个月免费）· 支持公对公转账与增值税发票 · 支持合伙人分销体系，佣金30%</p>
+  </div>
+</section>
+
+<section class="info-section" id="process">
+  <div class="container">
+    <h2 class="sec-title">购买流程与服务保障</h2>
+    <p class="sec-sub">从咨询到上线全程有专人跟进，标准交付最快1-3个工作日</p>
+    <div class="plan-wrap">
+      <div class="plan-card">
+        <div class="plan-name">① 咨询与需求诊断</div>
+        <p class="plan-desc">点击「立即咨询」提交需求，1个工作日内顾问联系，免费诊断你的业务场景并给出产品组合建议。</p>
+      </div>
+      <div class="plan-card">
+        <div class="plan-name">② 签约与付款</div>
+        <p class="plan-desc">支持按月订阅、年度订阅（享10个月价）与一次性买断三种模式；公对公转账，开具增值税专用/普通发票。</p>
+      </div>
+      <div class="plan-card">
+        <div class="plan-name">③ 交付与部署</div>
+        <p class="plan-desc">订阅类产品1-3个工作日开通；行业定制智能体2-4周交付；旗舰版可选SaaS云端或私有化部署。</p>
+      </div>
+      <div class="plan-card">
+        <div class="plan-name">④ 培训与售后</div>
+        <p class="plan-desc">开通即含使用培训与话术手册；订阅期内功能持续更新，工单响应不超过24小时，专属通道12小时。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="info-section" id="faq">
+  <div class="container">
+    <h2 class="sec-title">常见问题</h2>
+    <p class="sec-sub">企业客户最关心的 8 个问题</p>
+    <div class="faq-list">
+      <div class="faq-item"><button class="faq-q">我的业务数据安全吗？存在哪里？<span class="arr">▾</span></button><div class="faq-a">订阅版数据存储于云端并做租户隔离，仅你授权的账号可访问；旗舰版支持私有化部署，数据完全留在你自己的服务器。我们承诺不将客户业务数据用于任何第三方用途。</div></div>
+      <div class="faq-item"><button class="faq-q">底层用的是什么大模型？可以更换吗？<span class="arr">▾</span></button><div class="faq-a">平台架构模型无关，默认接入混元、DeepSeek、通义千问、GLM、Kimi 等主流模型，也支持通过 TOKEN聚合平台 中的任意服务商接入。模型可随业务需求随时切换，无需重新开发。</div></div>
+      <div class="faq-item"><button class="faq-q">按月订阅、年付和买断有什么区别？<span class="args"></span><span class="arr">▾</span></button><div class="faq-a">按月订阅灵活、随时停止；年付按10个月计费（相当于2个月免费），并锁定当前价格；部分工具类产品（如全套Prompt指令库、营销文案脚本库）支持一次性买断，含约定次数的版本更新。</div></div>
+      <div class="faq-item"><button class="faq-q">付款后多久能用上？交付周期多久？<span class="arr">▾</span></button><div class="faq-a">订阅类产品付款后1-3个工作日完成开通与培训；行业定制智能体因需针对你的业务做知识库与话术定制，交付周期为2-4周；加急交付可与顾问沟通排期。</div></div>
+      <div class="faq-item"><button class="faq-q">能开发票吗？支持对公转账吗？<span class="arr">▾</span></button><div class="faq-a">支持公对公转账结算，可开具增值税专用发票与普通发票，签约时提供完整开票信息即可。</div></div>
+      <div class="faq-item"><button class="faq-q">售后响应时效与保障是什么？<span class="arr">▾</span></button><div class="faq-a">订阅期内免费提供功能更新与故障处理：工单响应不超过24小时，增长版专属通道12小时，旗舰版1对1顾问工作日实时响应。产品能力问题提供远程协助直至解决。</div></div>
+      <div class="faq-item"><button class="faq-q">合伙人分销体系如何参与和结算？<span class="arr">▾</span></button><div class="faq-a">个人或机构均可申请成为合伙人，促成订单享受30%佣金，按月结算。加入后提供分销素材、报价体系与销售培训支持。</div></div>
+      <div class="faq-item"><button class="faq-q">案例里的效果数据是真实吗？<span class="arr">▾</span></button><div class="faq-a">页面案例均来自客户授权的脱敏运营统计或内测数据，已隐去可识别信息。效果受行业环境、企业基础与执行投入影响，具体目标会在交付前与顾问共同确认，不构成收益承诺。</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="info-section" id="about">
+  <div class="container">
+    <h2 class="sec-title">关于我们</h2>
+    <p class="sec-sub">光体•AI超市 —— 光体AI旗下的行业AI产品与智能体平台</p>
+    <div class="about-grid">
+      <div class="about-main">
+        <p><b>光体•AI超市</b>是光体AI旗下的行业AI产品平台，专注把大模型能力做成了<b>标准化、可交付、按行业定制</b>的商业产品，而不是停留在演示阶段的技术demo。</p>
+        <p>我们把AI落地拆解为获客引流、运营提效、转化留存三个环节，为<b>12大行业类目、108个细分领域</b>预置了专属智能体、Prompt指令库、营销文案脚本库、数字人口播话术、数据分析获客工具与运营SOP工作流六大类产品，让企业像逛超市一样按需选购、快速上线。</p>
+        <p>同时开放<b>合伙人分销体系（佣金30%）</b>，与个人创业者、代理机构、行业服务商共建分发网络。企业资质、主体信息与更多案例详情，可在咨询时向商务顾问索取。</p>
+      </div>
+      <div class="about-side">
+        <div class="about-stat"><b>12</b><span>大行业类目全覆盖</span></div>
+        <div class="about-stat"><b>108</b><span>个细分领域定制方案</span></div>
+        <div class="about-stat"><b>6</b><span>大标准化AI产品线</span></div>
+        <div class="about-stat"><b>30%</b><span>合伙人分销佣金，月度结算</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="disclaimer">
+  <div class="container">
+    <p>免责声明：本页面所载效果数据来自客户授权的脱敏运营统计或内测数据，因行业环境、企业基础与执行投入不同，实际效果存在个体差异，相关表述不构成任何形式的收益承诺或效果保证；页面价格与活动信息以最终签署的合同为准。</p>
+  </div>
+</section>
+<footer class="footer"><div class="container"><div class="footer-info"><div class="fi-row"><a class="js-contact">商务咨询</a><a class="js-faq-link">常见问题</a><a class="js-about-link">关于我们</a><a class="js-pricing-link">套餐价格</a></div><p class="fi-row">ICP备案号申请中 · 企业主体与资质信息可向商务顾问索取</p><p>光体•AI超市 &copy; 2026 &mdash; 全行业AI工具与智能体超级工具集 · 12大行业类目108细分领域</p></div></div></footer>
 <button class="back-to-top" id="backToTop" aria-label="返回顶部"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg></button>
 <button class="home-btn" id="homeBtn" aria-label="回到首页"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg><span>回到首页</span></button>
+
+<div class="contact-overlay" id="contactOverlay">
+  <div class="contact-modal">
+    <button class="contact-close" id="contactClose" aria-label="关闭">×</button>
+    <h3>咨询与开通</h3>
+    <p class="contact-sub">留下你的需求，工作日 1 个工作日内顾问与你联系；也可直接添加商务微信沟通。</p>
+    <div class="contact-channels">
+      <div class="contact-channel">💬 商务微信：<b>GT-AI-3396815</b>（添加请备注"AI超市"）</div>
+      <div class="contact-channel">📋 咨询范围：产品选购 · 行业定制 · 合伙人分销 · 发票与合同</div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <label>你的称呼<input type="text" id="cfName" placeholder="如：张先生 / 某某公司" required></label>
+      <label>联系电话 / 微信<input type="text" id="cfPhone" placeholder="方便顾问联系到你的方式" required></label>
+      <label>感兴趣的方向
+        <select id="cfInterest">
+          <option>套餐咨询（启航 / 增长 / 旗舰）</option>
+          <option>行业专属AI智能体定制</option>
+          <option>数据分析获客工具</option>
+          <option>数字人口播话术</option>
+          <option>TOKEN聚合平台接入</option>
+          <option>合伙人分销（佣金30%）</option>
+          <option>其他</option>
+        </select>
+      </label>
+      <label>需求描述（选填）<textarea id="cfMsg" rows="3" placeholder="简单说说你的行业和想解决的问题"></textarea></label>
+      <button type="submit" class="contact-submit">提交咨询需求</button>
+      <p class="contact-tip" id="cfTip">提交后将自动生成需求摘要，复制后通过微信发送即可</p>
+    </form>
+  </div>
+</div>
 <div class="preview-overlay" id="previewOverlay">
   <div class="preview-modal">
     <div class="preview-header">
@@ -395,9 +624,9 @@ if(caseList.length){
     '<div class="industry-section" data-sec="products">'+
       '<h3>全套商品矩阵</h3><p>以下6类标准化AI产品已为'+name+'行业定制完成，可直接上架使用：</p>'+
       productHtml+
-      '<h3>上架说明</h3><ul><li>每类商品均含行业定制版本与通用版本</li><li>支持SaaS订阅、买断、定制三种模式</li><li>支持合伙人分销体系，佣金30%</li></ul>'+
+      '<h3>上架说明</h3><ul><li>每类商品均含行业定制版本与通用版本</li><li>支持SaaS订阅、买断、定制三种模式</li><li>支持合伙人分销体系，佣金30%</li></ul>'+'<div class="buy-cta-bar"><div class="bar-text"><b>想为「'+name+'」行业开通这套AI产品？</b><span>顾问1个工作日内联系你，含行业演示与报价方案</span></div><button class="contact-submit js-contact" data-industry="'+name+'" style="padding:11px 22px">立即咨询开通</button></div>'+
     '</div>'+
-    '<div class="industry-section" data-sec="cases">'+casesHtml+'</div>';
+    '<div class="industry-section" data-sec="cases"><p style="font-size:12.5px;color:#94a3b8;background:#f8fafc;border-radius:8px;padding:10px 14px;margin:0 0 14px">以下案例数据经客户授权脱敏展示，隐去可识别信息；效果因企业基础与执行投入而异，仅供参考，不构成收益承诺。</p>'+casesHtml+'</div>';
   document.getElementById('industryOverlay').classList.add('active');
   document.body.style.overflow='hidden';
   document.querySelectorAll('.industry-tab').forEach(function(t){t.classList.remove('active')});
@@ -486,6 +715,51 @@ function closeAllOverlays(){['previewOverlay','industryOverlay'].forEach(functio
 function goHome(){var si=document.getElementById('searchInput');if(si){si.value='';performSearch('')}document.querySelectorAll('.sub-tabs').forEach(function(tabs){var all=tabs.querySelector('.sub-tab[data-sub="全部"]');if(all&&!all.classList.contains('active'))all.click()});closeAllOverlays();window.scrollTo({top:0,behavior:'smooth'})}
 if(homeBtn)homeBtn.addEventListener('click',goHome);
 var logoEl=document.querySelector('.logo');if(logoEl)logoEl.addEventListener('click',goHome);
+
+/* ===== P0 咨询弹窗 + 联系配置 ===== */
+var CONTACT={wechat:'GT-AI-3396815',note:'添加请备注"AI超市"'};
+var contactOverlay=document.getElementById('contactOverlay');
+function openContact(industry){contactOverlay.classList.add('active');document.body.style.overflow='hidden';var sel=document.getElementById('cfInterest');if(industry&&sel){var opt=Array.prototype.find.call(sel.options,function(o){return o.text.indexOf(industry)>-1});if(opt)sel.value=opt.value;else if(sel.options.length>6)sel.selectedIndex=6;}}
+function closeContact(){contactOverlay.classList.remove('active');document.body.style.overflow=''}
+document.addEventListener('click',function(e){
+  var t=e.target.closest('.js-contact,#ctaBtn');
+  if(t){e.preventDefault();openContact(t.getAttribute('data-industry')||'');return}
+  if(e.target.closest('#contactClose')||e.target===contactOverlay){closeContact();return}
+  if(e.target.closest('.js-faq-link')){closeAllOverlays();document.getElementById('faq').scrollIntoView({behavior:'smooth'});return}
+  if(e.target.closest('.js-about-link')){closeAllOverlays();document.getElementById('about').scrollIntoView({behavior:'smooth'});return}
+  if(e.target.closest('.js-pricing-link')){closeAllOverlays();document.getElementById('pricing').scrollIntoView({behavior:'smooth'});return}
+});
+document.getElementById('contactForm').addEventListener('submit',function(ev){
+  ev.preventDefault();
+  var name=document.getElementById('cfName').value.trim();
+  var phone=document.getElementById('cfPhone').value.trim();
+  var interest=document.getElementById('cfInterest').value;
+  var msg=document.getElementById('cfMsg').value.trim();
+  var text='【光体•AI超市 咨询】\n称呼: '+name+'\n联系方式: '+phone+'\n意向: '+interest+(msg?'\n需求: '+msg:'');
+  var done=function(){var tip=document.getElementById('cfTip');tip.textContent='✅ 需求摘要已复制到剪贴板，请添加商务微信 '+CONTACT.wechat+' 粘贴发送';tip.style.color='#059669'};
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(done).catch(function(){window.prompt('请手动复制以下内容：',text)})}
+  else{window.prompt('请手动复制以下内容：',text)}
+});
+/* ===== P2 FAQ 折叠 ===== */
+document.querySelectorAll('.faq-q').forEach(function(q){q.addEventListener('click',function(){var item=q.parentElement;var wasOpen=item.classList.contains('open');document.querySelectorAll('.faq-item.open').forEach(function(x){x.classList.remove('open')});if(!wasOpen)item.classList.add('open')})});
+/* ===== P2 TOKEN聚合平台决策矩阵 ===== */
+(function(){
+  var sec=document.getElementById('section-tokenhub');if(!sec)return;
+  var rows=[
+   ['腾讯云 TokenHub','腾讯官方','18款','OpenAI兼容','官方背书','增值税发票·公对公','重合规、要官方发票的企业'],
+   ['阿里云百炼平台','阿里官方','通义/Llama/DeepSeek等','OpenAI兼容','—','阿里云生态结算','已用阿里云资源的企业'],
+   ['百度智能云千帆','百度官方','文心+大量三方模型','—','—','成熟合规体系','各类To B业务场景'],
+   ['词元之河 TokenRiver.ai','企业级','480+','OpenAI/Anthropic/Gemini原生','99.99% SLA','公对公·正规发票','直连Claude Code/Cursor的开发团队'],
+   ['非线智能 API','全官方正品通道','485款','主流协议','万级RPM高并发','单次请求Token账单','技术团队生产环境长期使用'],
+   ['硅基流动 SiliconFlow','国内头部推理平台','开源+主流闭源','主流协议','—','按量计费透明','大规模调用开源模型'],
+   ['无问芯穹 Infini-AI','AI基础设施','主流开源/闭源','主流协议','异构芯片2-4倍加速','百亿tokens免费配额','算力成本与推理性能敏感的团队']
+  ];
+  var html='<h3 class="matrix-title">TOKEN平台怎么选？一张表看懂</h3><div class="matrix-scroll"><table class="matrix-table"><tr><th>平台</th><th>定位背书</th><th>模型规模</th><th>协议支持</th><th>稳定性/性能</th><th>结算与发票</th><th>适合谁</th></tr>';
+  rows.forEach(function(r){html+='<tr>';r.forEach(function(c){html+='<td>'+c+'</td>'});html+='</tr>'});
+  html+='</table></div>';
+  sec.insertAdjacentHTML('beforeend',html);
+})();
+
 </script>
 </body>
 </html>
